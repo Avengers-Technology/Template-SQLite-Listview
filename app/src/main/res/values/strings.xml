@@ -17,4 +17,17 @@
     <string name="difficulty_level">Difficulty level</string>
     <string name="description">Description</string>
     <string name="description_about_the_hike">Description about the hike…</string>
+    <string name="error">Error</string>
+    <string name="all_required_fields_must_be_filled">All required fields must be filled</string>
+    <string name="ok">OK</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="new_hike_will_be_added">New hike will be added</string>
+    <string name="name">Name: …</string>
+    <string name="location_success">Location: ...</string>
+    <string name="date_of_the_hike_success">Date of the hike: ...</string>
+    <string name="parking_available_success">Parking available: ...</string>
+    <string name="length_of_the_hike_success">Length of the hike: ...</string>
+    <string name="difficulty_level_success">Difficulty level: ...</string>
+    <string name="are_you_sure">Are you sure ?</string>
+    <string name="cancel">Cancel</string>
 </resources>
