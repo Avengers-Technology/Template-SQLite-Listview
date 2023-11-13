@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HikerManager</string>
+    <string name="add">Add</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="add_new_hike">Add new hike</string>
+    <string name="name_of_the_hike">Name of the hike</string>
+    <string name="enter_name_of_the_hike">Enter name of the hike…</string>
+    <string name="location">Location</string>
+    <string name="enter_location">Enter location…</string>
+    <string name="date_of_the_hike">Date of the hike</string>
+    <string name="enter_date_of_the_hike">Enter date of the hike…</string>
+    <string name="parking_available">Parking available</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="length_of_the_hike">Length of the hike</string>
+    <string name="difficulty_level">Difficulty level</string>
+    <string name="description">Description</string>
+    <string name="description_about_the_hike">Description about the hike…</string>
+</resources>
