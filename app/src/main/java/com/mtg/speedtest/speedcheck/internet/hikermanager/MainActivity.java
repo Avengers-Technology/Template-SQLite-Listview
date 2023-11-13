@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         tvHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addNewHike();
+                startActivity(new Intent(MainActivity.this, HomeAct.class));
             }
         });
 
