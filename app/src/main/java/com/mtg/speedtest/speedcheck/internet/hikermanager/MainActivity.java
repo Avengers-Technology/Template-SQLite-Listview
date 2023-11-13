@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,12 +19,14 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton radioYes, radioNo;
     private ImageView imvAdd;
     private TextView tvHome;
+    private DatabaseHelper databaseHelper;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        databaseHelper = new DatabaseHelper(this);
         initViews();
         initEvents();
 
@@ -53,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         String lengthHike = edtLengthHike.getText().toString().trim();
         String difficultyLevel = edtDifficultyLevel.getText().toString().trim();
         String description = edtDescription.getText().toString().trim();
-        String parkingAvailable = "";
+        String parkingAvailable = "Yes";
 
         if (radioYes.isChecked()) {
             parkingAvailable = "Yes";
@@ -101,16 +104,28 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+            String finalParkingAvailable = parkingAvailable;
             dialog.findViewById(R.id.tvYes).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    databaseHelper.addModel(new CommonsModel(nameHike, location, dateHike, finalParkingAvailable, lengthHike, difficultyLevel, description));
+                    dialog.dismiss();
+                    resetViews();
                 }
             });
 
             dialog.show();
         }
 
+    }
+
+    private void resetViews() {
+        edtNameHike.setText("");
+        edtLocation.setText("");
+        edtDateHike.setText("");
+        edtLengthHike.setText("");
+        edtDifficultyLevel.setText("");
+        edtDescription.setText("");
     }
 
     private void initViews() {
@@ -125,4 +140,5 @@ public class MainActivity extends AppCompatActivity {
         imvAdd = findViewById(R.id.imvAdd);
         tvHome = findViewById(R.id.tvHome);
     }
+
 }
