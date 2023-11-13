@@ -31,4 +31,5 @@
     <string name="are_you_sure">Are you sure ?</string>
     <string name="cancel">Cancel</string>
     <string name="delete_all">Delete All</string>
+    <string name="edit_hike">Edit hike</string>
 </resources>

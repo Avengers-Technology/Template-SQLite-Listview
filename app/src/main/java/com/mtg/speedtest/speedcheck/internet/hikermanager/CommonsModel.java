@@ -1,6 +1,8 @@
 package com.mtg.speedtest.speedcheck.internet.hikermanager;
 
-public class CommonsModel {
+import java.io.Serializable;
+
+public class CommonsModel implements Serializable {
     int id;
     String name;
     String location;

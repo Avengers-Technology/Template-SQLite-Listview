@@ -1,6 +1,7 @@
 package com.mtg.speedtest.speedcheck.internet.hikermanager;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,7 +51,9 @@ public class ListAdapter extends ArrayAdapter<CommonsModel> {
         tvItemMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.e("Logger", position + "");
+                Intent intent = new Intent(mContext, EditHikeAct.class);
+                intent.putExtra("data", commonsModel);
+                mContext.startActivity(intent);
             }
         });
 

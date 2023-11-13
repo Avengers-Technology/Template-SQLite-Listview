@@ -22,14 +22,14 @@ public class HomeAct extends AppCompatActivity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_act);
         databaseHelper = new DatabaseHelper(this);
-        initData();
-        initViews();
-        initEvents();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        initData();
+        initViews();
+        initEvents();
     }
 
     private void initData() {
