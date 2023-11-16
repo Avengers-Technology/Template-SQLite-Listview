@@ -26,7 +26,8 @@
         android:layout_weight="1"
         android:background="@drawable/custom_background_item_more"
         android:gravity="center"
-        android:text="More" />
+        android:text="More"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/tvItemDelete"
@@ -36,6 +37,7 @@
         android:layout_weight="1"
         android:background="@drawable/custom_background_item_delete"
         android:gravity="center"
-        android:text="Delete" />
+        android:text="Delete"
+        android:textColor="@color/white"/>
 
 </LinearLayout>
