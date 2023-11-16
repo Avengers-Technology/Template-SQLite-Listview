@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HikerManager</string>
     <string name="add">Add</string>
-    <string name="home">Home</string>
+    <string name="home">Home Screen</string>
     <string name="search">Search</string>
     <string name="add_new_hike">Add new hike</string>
     <string name="name_of_the_hike">Name of the hike</string>

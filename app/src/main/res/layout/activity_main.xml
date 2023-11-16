@@ -227,10 +227,10 @@
     <LinearLayout
         android:id="@+id/linearLayoutBar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="35dp"
         android:background="#DDD3D3"
         android:orientation="horizontal"
-        android:weightSum="3"
+        android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -241,7 +241,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
             android:text="@string/add"
-            android:textColor="@color/black"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="15sp" />
 
         <TextView
@@ -254,17 +254,6 @@
             android:text="@string/home"
             android:textColor="@color/black"
             android:textSize="15sp" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/montserrat_regular"
-            android:gravity="center"
-            android:text="@string/search"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
